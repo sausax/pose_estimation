@@ -1,6 +1,6 @@
 # pose_estimation
 
-This repository is inspired by "" paper. 
+This repository is inspired by "Articulated Pose Estimation using Discriminative Armlet Classifiers" paper. 
 
 ## Code directories
 
@@ -16,7 +16,7 @@ pickles - Directory to keep intermediate pickle files
 
 experimental_notebooks - Jupyter notebooks used for data exploration and experimentation
 
-Dataset
+## Dataset
 
 Download the MPII human pose dataset from http://human-pose.mpi-inf.mpg.de/#download and put the extracted images in mpii/images folder.
 
