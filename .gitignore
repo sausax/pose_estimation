@@ -1,0 +1,15 @@
+*.jpeg
+*.jpg
+*.dat
+*.xml
+*.json
+*.p
+TestSVM
+TrainSVM
+CMakeFiles/
+*.o
+*.mat
+*.tar.gz
+*.zip
+__pycache__
+.DS_Store
