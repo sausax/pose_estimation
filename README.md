@@ -24,8 +24,8 @@ Download the MPII human pose dataset from http://human-pose.mpi-inf.mpg.de/#down
 
 For preprocessing images go to python directory and run preprocessing.py script
 
-$ cd python 
-$ ./preprocessing
+$ cd python   
+$ ./preprocessing   
 
 
 ### Preprocessing steps
@@ -41,10 +41,10 @@ $ ./preprocessing
 
 For training SVM go to c++ directory, build and run TrainSVM 
 
-$ cd c++
-$ cmake . 
-$ make 
-$ ./TrainSVM
+$ cd c++   
+$ cmake .   
+$ make   
+$ ./TrainSVM  
 
 ### SVM training steps 
 
@@ -58,8 +58,8 @@ $ ./TrainSVM
 
 For testing SVM, go to c++ directory and run TestSVM (assuming TrainSVM is executed)
 
-$ cd c++
-$ ./TestSVM
+$ cd c++  
+$ ./TestSVM  
 
 ### SVM testing steps
 
