@@ -235,8 +235,6 @@ void display_test_img_with_predicted_joints(string img_name, map<string, pair<in
 }
 
 int main(int argc, char** argv ){
-    cout << "I am in test SVM" << endl;
-    
     // Read json files
     ifstream infile { "../jsons/img_data.json" };
     string file_contents { istreambuf_iterator<char>(infile), istreambuf_iterator<char>() };

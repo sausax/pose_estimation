@@ -112,7 +112,7 @@ def prepare_training_data(points_map, keypoints):
         
     return training_data_map
 
-def convert_training_data(trainint_data):
+def convert_training_data(training_data):
     json_obj = {}
 
     for key in training_data:

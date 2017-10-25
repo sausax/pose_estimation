@@ -49,7 +49,9 @@ def update_keypoint_locations(img_lst, joint_lst):
     new_joint_lst = []
     # Iterate over right hand saved images
     for indx, joint_dict in enumerate(joint_lst):
-        print('Processing index: ', indx)
+        #print('Processing index: ', indx)
+        if indx % 1000 == 0:
+            print("Processed %d images" %indx)
         # Calculate the center using keypoints
         center_x, center_y = calculate_center(joint_dict)                       
         sigma = calculate_sigma(joint_dict)
@@ -59,9 +61,9 @@ def update_keypoint_locations(img_lst, joint_lst):
     return new_joint_lst
 
 def convert_new_joint_lst():
-    new_joint_lst = pickle.load(open('new_joint_lst.p', 'rb'))
+    new_joint_lst = pickle.load(open('../pickles/new_joint_lst.p', 'rb'))
     json_str = json.dumps(new_joint_lst)
-    open('jsons/new_joint_lst.json', 'w').write(json_str)
+    open('../jsons/new_joint_lst.json', 'w').write(json_str)
         
 def update_joint_location():
     img_data = pickle.load(open("../pickles/img_data.p", "rb"))

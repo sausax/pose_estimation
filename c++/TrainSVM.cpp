@@ -87,7 +87,7 @@ void train_svm(vector<int> pos, vector<int> neg, string cluster_key){
     // Adding positive examples to training data
     for(int img_id: pos){
         vector<float> descriptor;
-        string filename = "../mp2/cropped_imgs/"+to_string(img_id)+".jpeg";
+        string filename = "../mpii/cropped_imgs/"+to_string(img_id)+".jpeg";
         generate_hog_features(filename, descriptor);
         input_vector vec;
         //cout << "Pos: "; print_vec(descriptor);
@@ -99,7 +99,7 @@ void train_svm(vector<int> pos, vector<int> neg, string cluster_key){
     // Adding negtive examples to training data
     for(int img_id: neg){
         vector<float> descriptor;
-        string filename = "../mp2/cropped_imgs/"+to_string(img_id)+".jpeg";
+        string filename = "../mpii/cropped_imgs/"+to_string(img_id)+".jpeg";
         generate_hog_features(filename, descriptor);
         //cout << "Neg: "; print_vec(descriptor);
         input_vector vec;
@@ -108,7 +108,6 @@ void train_svm(vector<int> pos, vector<int> neg, string cluster_key){
         count++;
     }
 
-  
     vector<int> labels;
     labels.assign( pos.size(), +1);
     labels.insert( labels.end(), neg.size(), -1);
