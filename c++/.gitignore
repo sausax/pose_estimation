@@ -1,9 +1,0 @@
-*.jpeg
-*.dat
-*.xml
-*.json
-*.p
-TestSVM
-TrainSVM
-CMakeFiles/
-*.o
